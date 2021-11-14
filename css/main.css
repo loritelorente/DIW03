@@ -1,0 +1,82 @@
+.container{
+   max-width: 900px;
+   background: #f6f2f8;
+   margin: 0 auto;
+   /* Margen derecho e izquierdo */
+   padding-left: 0.6rem;
+   padding-right: 0.6rem;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height : 1.5rem;
+  text-indent: 2rem;
+  color: #707070;
+  /* Espacio entre textos */
+  padding-bottom: 0.6rem;
+  padding-top: 0.6rem;
+}
+
+/* Estilo a los encabezados */
+h1, h2, h3, h4 {
+  /* Espacio entre textos */
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: #707070;
+}
+
+h1 {
+  color: #f6f2f8;
+  text-align: center;
+  font-size: 2.4rem;
+  background: rgb(100,36,129);
+  background: linear-gradient(90deg, rgba(100,36,129,1) 0%, rgba(43,179,217,1) 100%);
+}
+
+h2{
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+/* Estilo a los enlaces */
+a {
+  text-decoration: none;
+  color: #7B568B;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #7B568B;
+  text-decoration: underline;
+
+}
+
+a:visited {
+  color: #428BCA;
+}
+
+
+/* Dar estilo a los elementos restantes */
+ul {
+  margin-left: 1.5rem;
+  list-style-type: circle;
+}
+
+li {
+  margin: 0.3rem 0;
+  color: #707070;
+}
+
+th {
+  color: #707070;
+  font-weight: 900;
+}
