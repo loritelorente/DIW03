@@ -6,184 +6,34 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
     <meta name="author" content="Juan José Lorite Lorente" />
-    <meta name="description" content="Versión en formato HTML antiguo de la página web de la wikipedia sobre framework (https://es.wikipedia.org/wiki/Framework)" />
-    <title>Framework - Wikipedia</title>
+    <meta name="description" content="Tarea DIW03: Web de los servicios de Cartagena con temática zombie" />
+    <title>Cartagena Zombie</title>
+	<link rel="icon" type="image/x-icon" href="img/iconos/favicon.png">
   </head>
 
   <body>
-    <div class="container">
 
-    	<h1>Framework</h1>
-        <p>Un <b>entorno de trabajo</b><sup id="cite_ref-1">
-              <a href="#cite_note-1" >1</a></sup> (del inglés <i><b>framework</b></i>), o <b>marco de trabajo</b><sup id="cite_ref-2">
-              <a href="#cite_note-2" >2</a></sup>​ es un conjunto estandarizado de conceptos, prácticas y criterios para enfocar un tipo de problemática particular que sirve como referencia,
-    		  para enfrentar y resolver nuevos problemas de índole similar.</p>
+	<nav>
 
-    	<p>En el <a href="/wiki/Desarrollo_software" title="Desarrollo de software">desarrollo de software</a>, un entorno de trabajo es una estructura conceptual y tecnológica de asistencia definida,
-    	normalmente, con artefactos o módulos concretos de <i>software</i>, que puede servir de base para la organización y desarrollo de <a href="/wiki/Software" title="Software"><i>software</i></a>.
-    	Típicamente, puede incluir soporte de <a href="/wiki/Programas" title="Programas">programas</a>, <a href="/wiki/Bibliotecas" title="Bibliotecas">bibliotecas</a>,
-    	y un <a href="/wiki/Lenguaje_interpretado" title="Lenguaje interpretado">lenguaje interpretado</a>, entre otras herramientas, para así ayudar a desarrollar y unir los diferentes componentes de un proyecto.</p>
+	</nav>
 
-    	<p>Representa una <a href="/wiki/Arquitectura_software" title="Arquitectura de software">arquitectura de software</a> que modela las relaciones generales de las entidades del dominio, y provee una estructura y
-    	una especial metodología de trabajo, la cual extiende o utiliza las aplicaciones del dominio.<sup id="cite_ref-framework_3-0"><a href="#cite_note-framework-3" >3</a></sup> ​</p>
+	<div>
 
-    	<h2>Índice</h2>
-        <ol>
-            <li><a href="#Introduccion">Introducción</a></li>
-            <li><a href="#Basicos">Básicos</a></li>
-    		<ol>
-                <li><a href="#Arquitectura">Arquitectura</a></li>
-                <li><a href="#Estructura">Estructura</a></li>
-            </ol>
-            <li><a href="#Logica">Lógica</a></li>
-            <li><a href="#Vease">Véase también</a></li>
-            <li><a href="#Referencias">Referencias</a></li>
-        </ol>
+	</div>
 
-        <h2 id="Introduccion">Introducción</h2>
+	<div>
 
-    	<p>Los marcos de trabajo tienen como objetivo principal ofrecer una funcionalidad definida, auto contenida, siendo construidos usando patrones de diseño, y su característica principal es su alta cohesión y
-    	bajo acoplamiento.</p>
+	</div>
 
-    	<p>Para acceder a esa funcionalidad, se construyen piezas, objetos, llamados objetos calientes, que vinculan las necesidades del sistema con la funcionalidad que este presta.</p>
+	<div>
 
-    	<p>Esta funcionalidad, está constituida por objetos llamados fríos, que sufren poco o ningún cambio en la vida del framework, permitiendo la portabilidad entre distintos sistemas.</p>
+	</div>
 
-    	<p>Algunos entornos de trabajo conocidos son <a href="/wiki/Spring_framework" title="Spring Framework">Spring Framework</a> o <a href="/wiki/Hibernate" title="Hibernate">Hibernate</a>, donde lo esencial para
-    	ser denominados entornos de trabajo es estar constituidos por objetos casi estáticos con funcionalidad definida a nivel grupo de objetos y no como parte constitutiva de estos, por ejemplo en sus métodos,
-    	en cuyo caso se habla de una API o librería.</p>
+	<footer>
 
-    	<p>Algunas características notables que se pueden observar:</p>
+	</footer>
 
-    	<ul>
-    		<li>La <a href="/wiki/Inversion_control" title="Inversión de control">inversión de control</a>: en un <i>framework</i>, a diferencia de las bibliotecas, el flujo de control no es dictado por el programa que llama,
-    		sino por el mismo.<sup id="cite_ref-framework_3-1"><a href="#cite_note-framework-3" >3</a></sup> </li>
-    		<li>La funcionalidad o comportamiento predeterminado: un marco tiene un comportamiento predeterminado. Este comportamiento por defecto debe ser un comportamiento útil, definido e identificable. </li>
-    		<li>Su <a href="/wiki/Escalabilidad" title="Escalabilidad">escalabilidad</a>: un marco puede ser ampliado para proporcionar una funcionalidad específica. El frame, en general, no se supone que deba ser modificado,
-    		excepto en cuanto a extensibilidad. Los usuarios pueden ampliar sus características, pero no deben ni necesitan modificar su código.</li>
-    	</ul>
-
-    	<h2 id="Basicos">Básicos</h2>
-    	<img align="right" alt="Python Powered.png" src="img/img01.png" width="220" height="156" />
-    	<p>No es más que una base de programación que atiende a sus descendientes (manejado de una forma estructural o en cascada), posibilitando cualquier respuesta ante las necesidades de sus miembros,
-    	o en secciones de una aplicación (<a href="/wiki/Web" title="Web">web</a>), satisfaciendo así las necesidades más comunes del programador.</p>
-
-    	<h3 id="Arquitectura">Arquitectura</h3>
-
-    	<p>Dentro de este aspecto, podemos basarnos en el <a href="/wiki/Modelo_vista_controlador" title="Modelo-vista-controlador">modelo-vista-controlador</a> o MVC (Controlador => Modelo => Vista),
-    	ya que debemos fragmentar nuestra <a href="/wiki/Programación" title="Programación">programación</a>. Tenemos que contemplar estos aspectos básicos en cuanto a la implementación de nuestro sistema:</p>
-
-    	<h4>Modelo</h4>
-
-    	<blockquote>
-    		<p>Este miembro del <a href="/wiki/Controlador" title="Controlador">controlador</a> maneja las operaciones lógicas, y de manejo de información (previamente enviada por su ancestro),
-    		para resultar de una forma explicable y sin titubeos. Cada miembro debe ser meticulosamente llamado, con su correcto nombre y en principio, con su verdadera naturaleza: el manejo de información,
-    		su complementación directa.</p>
-    	</blockquote>
-
-      	<h4>Vista</h4>
-
-    	<blockquote>
-    		<p>Al final, a este miembro de la familia le corresponde dibujar, o expresar la última forma de los datos: la interfaz gráfica que interactúa con el usuario final del programa
-    		(<a href="/wiki/GUI" title="GUI">GUI</a>). Después de todo, a este miembro le toca evidenciar la información obtenida hasta hacerla llegar al controlador. Solo (e inicialmente), nos espera demostrar la información.</p>
-    	</blockquote>
-
-        <h4>Controlador</h4>
-
-    	<blockquote>
-    		<p>Con este apartado podemos controlar el acceso (incluso todo) a nuestra <a href="/wiki/Aplicacion" title="Aplicación">aplicación</a>, y esto puede incluir: <a href="/wiki/Archivos" title="Archivos">archivos</a>,
-    		<a href="/wiki/Scripts" title="Scripts"><i>scripts</i></a>, o <a href="/wiki/Programas" title="Programas">programas</a>; cualquier tipo de información que permita la <a href="/wiki/Interfaz" title="Interfaz">interfaz</a>.
-    		Así, podremos diversificar nuestro contenido de forma dinámica, y estática (a la vez); pues, solo debemos controlar ciertos aspectos (como se ha mencionado antes).</p>
-    	</blockquote>
-
-    	<h3 id="Estructura">Estructura</h3>
-
-    	<p>Dentro del controlador, modelo o vista, se pueden manejar datos, y depende de cada uno cómo interpretar y manejar esos datos. Se sabe que el único dato de una dirección estática web es: conseguir un archivo
-    	físico en el <a href="/wiki/Disco_duro" title="Disco duro">disco duro</a> o de <a href="/wiki/Internet" title="Internet">Internet</a>, etc., e interpretado o no, el
-    	<a href="/wiki/Servidor" title="Servidor">servidor</a> responde.</p>
-
-    	<p>El modelo, al igual que el controlador y la vista, maneja todos los datos que se relacionen consigo (solo es el proceso medio de la separación por capas que ofrece la arquitectura MVC). Y solo la vista,
-    	puede demostrar dicha información. Con lo cual ya se ha generado la <a href="/wiki/Jerarquia" title="Jerarquía">jerarquía</a> del programa: controlador, modelo y vista.</p>
-
-    	<h2 id="Logica">Lógica</h2>
-
-    	<p>Al parecer, debemos inyectar ciertos objetos dentro de sus parientes en esta aplicación, solo así compartirán herencia y coherencia en su aplicación.</p>
-
-    	<p>Rápidamente, para una <a href="/wiki/Aplicacion_web" title="Aplicación web">aplicación web</a> sencilla debemos establecer estos objetos:</p>
-
-    	<ul>
-    		<li>
-    			Una base (<a href="/wiki/MVC" title="MVC">MVC</a>)
-    			<ul>
-    				<li>Controlador: este debe ser capaz de manejar rutas, archivos, clases, métodos y funciones.</li>
-    				<li>Modelo: es como un <i>script</i> habitual en el servidor, solo que agrupado bajo un <i>modelo</i> reutilizable.</li>
-    				<li>Vista: como incluyendo cualquier archivo en nuestra ejecución, muy simple.</li>
-    			</ul>
-    		</li>
-    		<li>
-    			Un sistema
-    			<ul>
-    				<li>Ruteador: con él podemos dividir nuestras peticiones sin tantas condicionales.</li>
-    				<li>Cargador</li>
-    			</ul>
-    		</li>
-    	</ul>
-
-    	<h2 id="Vease">Véase también</h2>
-
-    	<table border="3" cellspacing="1" cellpadding="3" width="200">
-            <tr>
-                <th>ENLACES WEB</th>
-            </tr>
-            <tr>
-                <td><a href="/wiki/Dojo_toolkit" title="Dojo toolkit">Dojo toolkit</a></td>
-            </tr>
-            <tr>
-                <td><a href="/wiki/Entorno_desarrollo_integrado" title="Entorno de desarrollo integrado">Entorno de desarrollo integrado</a></td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="/wiki/Framework_aplicaciones_web" title="Framework para aplicaciones web">Framework para aplicaciones web</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="/wiki/Marco_aplicaciones" title="Marco de aplicaciones">Marco de aplicaciones</a>
-                </td>
-            </tr>
-    		<tr>
-                <td>
-                    <a href="/wiki/Modelo_vista_controlador" title="Modelo-vista-controlador" >Modelo-vista-controlador</a>
-                </td>
-            </tr>
-    		<tr>
-                <td>
-                    <a href="/wiki/Plataforma" title="Plataforma">Plataforma</a>
-                </td>
-            </tr>
-    		<tr>
-                <td>
-                    <a href="/wiki/Hamlets" title="Hamlets">Hamlets</a>
-                </td>
-            </tr>
-        </table>
-
-    	<h2 id="Referencias">Referencias</h2>
-
-    	<ol>
-    		<li id="cite_note-1"><a href="#cite_ref-1" title="Volver arriba">↑</a> Oscar, La Red Martínez, David L.; Acosta, Julio César; Mata, Liliana E.; Bachmann, Noemí G.; Vallejos, (1 de enero de 2012).
-                  <a rel="nofollow" href="http://sedici.unlp.edu.ar/handle/10915/19306"><i>Aprendizaje combinado, aprendizaje electrónico centrado en el alumno y nuevas tecnologías</i></a>. Consultado el 11 de abril de 2017.
-            </li>
-            <li id="cite_note-2"><a href="#cite_ref-2" title="Volver arriba">↑</a> <a rel="nofollow" href="http://openaccess.uoc.edu/webapps/o2/bitstream/10609/876/1/00765tfc.pdf">«Diseño e implementación de un marco de trabajo (framework) de presentación para aplicaciones JEE»</a>.
-    			  <i>Diseño e implementación de un marco de trabajo (framework) de presentación para aplicaciones JEE.</i>
-            </li>
-            <li id="cite_note-framework-3">↑ <sup><a href="#cite_ref-framework_3-0" ><i><b>a</b></i></a></sup> <sup><a href="#cite_ref-framework_3-1" ><i><b>b</b></i></a></sup> Riehle, Dirk (2000),
-    		<a rel="nofollow" href="http://www.riehle.org/computer-science/research/dissertation/diss-a4.pdf"><i>Framework Design: A Role Modeling Approach</i></a>,
-    			<a href="https://es.wikipedia.org/wiki/ETH_Zurich"><i>Swiss Federal Institute of Technology</i></a>.
-            </li>
-        </ol>
-
-    </div>
+   
   </body>
 
 </html>
