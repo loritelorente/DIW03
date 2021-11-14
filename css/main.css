@@ -1,82 +1,133 @@
-.container{
-   max-width: 900px;
-   background: #f6f2f8;
-   margin: 0 auto;
-   /* Margen derecho e izquierdo */
-   padding-left: 0.6rem;
-   padding-right: 0.6rem;
+/*
+font-family: 'Creepster', cursive;
+font-family: 'Griffy', cursive;
+font-family: 'Inter', sans-serif;
+*/
+
+header {
+  background-color: #A55183;
 }
 
-p {
-  font-size: 1.05rem;
-  line-height : 1.5rem;
-  text-indent: 2rem;
-  color: #707070;
-  /* Espacio entre textos */
-  padding-bottom: 0.6rem;
-  padding-top: 0.6rem;
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-/* Estilo a los encabezados */
-h1, h2, h3, h4 {
-  /* Espacio entre textos */
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
-  font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
-  color: #707070;
+.logo img {
+  margin-left: 2rem;
+  padding: 0.5rem;
+  width: 20rem;
+  height: 3rem;
 }
 
-h1 {
-  color: #f6f2f8;
+.logo button {
+  font-size: 1rem;
+  font-family: 'Griffy', cursive;
+  color: #A55183  ;
+  background-color: #F3F5F7;
+  height: 2.5rem;
+  margin-right: 5rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.logo button:hover {
+  color: #FC5420;
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top:0.2rem;
+  padding-bottom:1rem;
+}
+
+header ul li {
   text-align: center;
-  font-size: 2.4rem;
-  background: rgb(100,36,129);
-  background: linear-gradient(90deg, rgba(100,36,129,1) 0%, rgba(43,179,217,1) 100%);
+  flex: 0 1 150px;
 }
 
-h2{
-  font-size: 1.8rem;
-}
-
-h3 {
-  font-size: 1.4rem;
-}
-
-h4 {
-  font-size: 1.1rem;
-}
-
-/* Estilo a los enlaces */
-a {
+header ul li a {
+  display: block;
+  padding: 0.5rem;
+  font-size: 1.5rem;
   text-decoration: none;
-  color: #7B568B;
-  font-weight: 600;
+  font-family: 'Griffy', cursive;
+  color: #FFFFFF  ;
 }
 
-a:hover {
-  color: #7B568B;
-  text-decoration: underline;
-
+header ul li a:hover {
+  color: #FC5420;
 }
 
-a:visited {
-  color: #428BCA;
+.cabecera {
+  background-color: #DD4825;
+  text-align: center;
+  color: #FFFFFF;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.cabecera h1 {
+  font-family: 'Creepster', cursive;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.cabecera p {
+  font-family: 'Griffy', cursive;
+  font-size: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.resumen {
+  background-color: #FC5420;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resumen img {
+  padding-right: 1rem;
+  height: 90%;
+  width: 60%;
+}
+
+.leyenda {
+  color: #1F313D;
+  width: 35%;
+}
+
+.leyenda .titulo {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.leyenda .titulo img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.leyenda .titulo h2 {
+  font-family: 'Griffy', cursive;
 }
 
 
-/* Dar estilo a los elementos restantes */
-ul {
-  margin-left: 1.5rem;
-  list-style-type: circle;
+.cuerpo {
+  background-color: #FC5420;
 }
 
-li {
-  margin: 0.3rem 0;
-  color: #707070;
+footer {
+  background-color: #A55183;
 }
 
-th {
-  color: #707070;
-  font-weight: 900;
+
+h2 {
+  font-family: 'Creepster', cursive;
+  font-size: 2rem;
 }

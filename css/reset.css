@@ -49,8 +49,9 @@ table {
 	border-spacing: 0;
 }
 
-/* Fuente por defecto */
+/* Fuente y color por defecto */
 :root {
+  color: #1F313D;
   font-weight: 400;
   font-family: 'Inter', sans-serif;
 }
