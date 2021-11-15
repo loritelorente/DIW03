@@ -8,6 +8,7 @@ header {
   background-color: #A55183;
 }
 
+/*Ponemos el logo a la izquierda y el boton a la derecha*/
 .logo {
   display: flex;
   align-items: center;
@@ -15,6 +16,7 @@ header {
   flex-wrap: wrap;
 }
 
+/*damos un margen y un tamaño al logo*/
 .logo img {
   margin-left: 2rem;
   padding: 0.5rem;
@@ -22,6 +24,7 @@ header {
   height: 3rem;
 }
 
+/*Le damos un estilo al boton, tamaño y le damos un margen*/
 .logo button {
   font-size: 1rem;
   font-family: 'Griffy', cursive;
@@ -38,6 +41,7 @@ header {
   color: #FC5420;
 }
 
+/*Colocamos los elementos a la izquierda de la pantalla y activamos el wrap cuando se minimice */
 header ul {
   display: flex;
   justify-content: flex-start;
@@ -47,11 +51,13 @@ header ul {
   
 }
 
+/*Colocamos el texto en el centro y establecemos cuando se tienen que mover los elementos cuando se minimice la pantalla*/
 header ul li {
   text-align: center;
-  flex: 0 1 150px;
+  flex: 0 1 10rem;
 }
 
+/*Estilo de los enlaces*/
 header ul li a {
   display: block;
   padding: 0.5rem;
@@ -65,6 +71,7 @@ header ul li a:hover {
   color: #FC5420;
 }
 
+/*Posicionamos el texto en el centro y le damos un estilo*/
 .cabecera {
   background-color: #DD4825;
   text-align: center;
@@ -73,68 +80,166 @@ header ul li a:hover {
   padding-right: 25%;
 }
 
+/*Tamaño, tipografia y margenes del titulo*/
 .cabecera h1 {
   font-family: 'Creepster', cursive;
   font-size: 3rem;
   padding: 1rem;
 }
 
+/*Tamaño, tipografia y margenes del parrafo*/
 .cabecera p {
   font-family: 'Griffy', cursive;
   font-size: 1rem;
   padding-bottom: 1.5rem;
 }
 
+/*Ponemos uno al lado del otro el mapa y la leyenda, centramos el contenido y damos unos margenes*/
 .resumen {
   background-color: #FC5420;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  /*Si se minimiza la pantalla la leyenda se movera abajo del mapa*/
   align-items: center;
   font-size: 0.9rem;
   padding: 1rem;
+  padding-left: 5rem;
 }
 
+/*Establecemos el tamaño que tendra el mapa en la web*/
 .resumen > img {
-  padding-right: 1rem;
   height: 90%;
   width: 55%;
-  min-width: 28rem;
+  min-width: 20rem;
 }
 
+/*Establecemos el tamaño que tendra la leyenda en la web*/
 .leyenda {
-  padding-left: 5rem;
+  padding-left: 3rem;
   color: #1F313D;
   width: 35%;
 }
 
+/*Colocamos el titulo y su icono un junto al otro*/
 .leyenda .titulo {
   display: flex;
   padding-top: 1rem;
 }
 
+/*Tamaño del icono*/
 .leyenda .titulo img {
   width: 2rem;
   height: 2rem;
   padding-right: 0.5rem;
 }
 
+/*Tipografia de los titulos de la leyenda*/
 .leyenda .titulo h2 {
   font-family: 'Griffy', cursive;
 }
 
-.leyenda  p {
+.leyenda p {
   padding-top: 0.3rem;
 }
 
+/*Damos un tamaño generico al texto*/
 .cuerpo {
   background-color: #FC5420;
+  font-size: 0.9rem;
+  padding-bottom: 2rem;
+}
+
+/*Espacio entre secciones de establecimientos*/
+.establecimiento {
+  padding-bottom: 4rem;
+}
+
+/*Centramos los apartados descriptivos del establecimiento y les damos un margen*/
+.descripcionEst{
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/*Distancia entre el parrafo y el titulo*/
+.descripcionEst h2{
+  padding-bottom: 1rem;
+}
+
+/*Posicionamos las cartas una al lado de la otra repartiendose el espacio*/
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+} 
+
+/*borde de la carta, tamaño y repartimos sus elementos en columnas para que ocupen de manera proporcionada todo el espacio*/
+.card {
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: #A55183;
+  width: 30%;
+  min-width: 20rem;
+  height: 25rem;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  
+}
+
+/*Que la imagen ocupe todo el ancho de la carta y buena parte del ancho*/
+.card > img{
+  width: 100%;
+  height: 50%;
+}
+
+/*Maren izquierdo en los textos de la carta*/
+.card > h2,p {
+  padding-left: 0.5rem;
+}
+
+/*Posicionamos el elemento abajo a la derecha y centramos sus elementos*/
+.puntuacion{
+  padding-bottom: 0.2rem;
+  padding-right: 0.5rem;
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+}
+
+/*Tamaño del icono de puntuacion*/
+.puntuacion img{
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+/*Estilo texto puntuación*/
+.puntuacion p{
+  font-size: 0.75rem;
+  padding-right: 0.5rem;
+  color: #000000;
+
+}
+
+/*Estilo especifico para los titulos de las tarjetas de establecimientos*/
+.card h2{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
 }
 
 footer {
   background-color: #A55183;
 }
 
-
+/*Estilo general para los titulos*/
 h2 {
   font-family: 'Creepster', cursive;
   font-size: 2rem;
