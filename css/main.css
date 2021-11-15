@@ -153,7 +153,7 @@ header ul li a:hover {
   padding-bottom: 4rem;
 }
 
-/*Centramos los apartados descriptivos del establecimiento y les damos un margen*/
+/*Centramos los textos descriptivos del establecimiento y les damos un margen*/
 .descripcionEst{
   text-align: center;
   padding-left: 20%;
@@ -170,7 +170,6 @@ header ul li a:hover {
 /*Posicionamos las cartas una al lado de la otra repartiendose el espacio*/
 .cards {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 5%;
@@ -184,25 +183,33 @@ header ul li a:hover {
   border-color: #A55183;
   width: 30%;
   min-width: 20rem;
-  height: 25rem;
+  height: 23rem;
 
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: stretch;
-  
 }
 
 /*Que la imagen ocupe todo el ancho de la carta y buena parte del ancho*/
-.card > img{
+.card img{
   width: 100%;
   height: 50%;
 }
 
-/*Maren izquierdo en los textos de la carta*/
-.card > h2,p {
+/*estilo para los titulos de las tarjetas de establecimientos*/
+.card h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
   padding-left: 0.5rem;
+}
+
+/*estilo para las descripciones de las tarjetas de establecimientos*/
+.card p {
+  padding-left: 0.5rem;
+  padding-right: 10%;
+
 }
 
 /*Posicionamos el elemento abajo a la derecha y centramos sus elementos*/
@@ -228,16 +235,80 @@ header ul li a:hover {
 
 }
 
-/*Estilo especifico para los titulos de las tarjetas de establecimientos*/
-.card h2{
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 1.4rem;
-}
-
 footer {
   background-color: #A55183;
+  display: flex;
+  flex-direction: column;
 }
+
+/*Estilo general del footer, centramos los elementos y establecemos el flex */
+/*Los hijos se repartiran el tamaño en columnas*/
+.info {
+  color: #FFFFFF  ;
+  font-size: 0.9rem;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.info img {
+  padding: 0.5rem;
+  padding-right: 2rem;
+  height: 3rem;
+  flex: 1 0 20%;
+}
+
+.contacto {
+  flex: 1 0 20%;
+}
+
+.colaboradores {
+  flex: 1 0 20%;
+}
+
+.licencia {
+  flex: 1 0 20%;
+}
+
+/*Estilo titulos footer*/
+.info h3 {
+  font-family: 'Griffy', cursive;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+/*Estilo lista*/
+.info ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+/*Movemos los iconos de las redes sociales al final de la pantalla y los colocamos en fila*/
+.social {
+  align-self: flex-end;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+/*Cambiamos el color de los iconos de redes sociales a blanco*/
+.social img{
+  filter: brightness(0) invert(1);
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+  padding-right: 4rem;
+}
+
+.social img:hover{
+  filter: invert(53%) sepia(83%) saturate(4923%) hue-rotate(349deg) brightness(101%) contrast(98%);
+}
+
 
 /*Estilo general para los titulos*/
 h2 {
