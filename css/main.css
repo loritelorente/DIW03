@@ -29,6 +29,7 @@ header {
   background-color: #F3F5F7;
   height: 2.5rem;
   margin-right: 5rem;
+  margin-left: 3rem; /*Para que no se quede pegado a la parte derecha de la pantalla cuando se minimiza la ventana*/
   border: none;
   border-radius: 4px;
 }
@@ -43,6 +44,7 @@ header ul {
   flex-wrap: wrap;
   padding-top:0.2rem;
   padding-bottom:1rem;
+  
 }
 
 header ul li {
@@ -87,36 +89,42 @@ header ul li a:hover {
   background-color: #FC5420;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+  font-size: 0.9rem;
+  padding: 1rem;
 }
 
-.resumen img {
+.resumen > img {
   padding-right: 1rem;
   height: 90%;
-  width: 60%;
+  width: 55%;
+  min-width: 28rem;
 }
 
 .leyenda {
+  padding-left: 5rem;
   color: #1F313D;
   width: 35%;
 }
 
 .leyenda .titulo {
   display: flex;
-  align-items: center;
   padding-top: 1rem;
 }
 
 .leyenda .titulo img {
   width: 2rem;
   height: 2rem;
+  padding-right: 0.5rem;
 }
 
 .leyenda .titulo h2 {
   font-family: 'Griffy', cursive;
 }
 
+.leyenda  p {
+  padding-top: 0.3rem;
+}
 
 .cuerpo {
   background-color: #FC5420;
