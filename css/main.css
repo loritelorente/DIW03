@@ -5,7 +5,7 @@ font-family: 'Inter', sans-serif;
 */
 
 header {
-  background-color: #A55183;
+  background-color: #a55183;
 }
 
 /*Ponemos el logo a la izquierda y el boton a la derecha*/
@@ -27,9 +27,9 @@ header {
 /*Le damos un estilo al boton, tamaño y le damos un margen*/
 .logo button {
   font-size: 1rem;
-  font-family: 'Griffy', cursive;
-  color: #A55183  ;
-  background-color: #F3F5F7;
+  font-family: "Griffy", cursive;
+  color: #a55183;
+  background-color: #f3f5f7;
   height: 2.5rem;
   margin-right: 5rem;
   margin-left: 3rem; /*Para que no se quede pegado a la parte derecha de la pantalla cuando se minimiza la ventana*/
@@ -38,7 +38,7 @@ header {
 }
 
 .logo button:hover {
-  color: #FC5420;
+  color: #fc5420;
 }
 
 /*Colocamos los elementos a la izquierda de la pantalla y activamos el wrap cuando se minimice */
@@ -46,9 +46,8 @@ header ul {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding-top:0.2rem;
-  padding-bottom:1rem;
-  
+  padding-top: 0.2rem;
+  padding-bottom: 1rem;
 }
 
 /*Colocamos el texto en el centro y establecemos cuando se tienen que mover los elementos cuando se minimice la pantalla*/
@@ -63,42 +62,42 @@ header ul li a {
   padding: 0.5rem;
   font-size: 1.5rem;
   text-decoration: none;
-  font-family: 'Griffy', cursive;
-  color: #FFFFFF  ;
+  font-family: "Griffy", cursive;
+  color: #ffffff;
 }
 
 header ul li a:hover {
-  color: #FC5420;
+  color: #fc5420;
 }
 
 /*Posicionamos el texto en el centro y le damos un estilo*/
 .cabecera {
-  background-color: #DD4825;
+  background-color: #dd4825;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-left: 25%;
   padding-right: 25%;
 }
 
 /*Tamaño, tipografia y margenes del titulo*/
 .cabecera h1 {
-  font-family: 'Creepster', cursive;
+  font-family: "Creepster", cursive;
   font-size: 3rem;
   padding: 1rem;
 }
 
 /*Tamaño, tipografia y margenes del parrafo*/
 .cabecera p {
-  font-family: 'Griffy', cursive;
+  font-family: "Griffy", cursive;
   font-size: 1rem;
   padding-bottom: 1.5rem;
 }
 
 /*Ponemos uno al lado del otro el mapa y la leyenda, centramos el contenido y damos unos margenes*/
 .resumen {
-  background-color: #FC5420;
+  background-color: #fc5420;
   display: flex;
-  flex-wrap: wrap;  /*Si se minimiza la pantalla la leyenda se movera abajo del mapa*/
+  flex-wrap: wrap; /*Si se minimiza la pantalla la leyenda se movera abajo del mapa*/
   align-items: center;
   font-size: 0.9rem;
   padding: 1rem;
@@ -115,7 +114,7 @@ header ul li a:hover {
 /*Establecemos el tamaño que tendra la leyenda en la web*/
 .leyenda {
   padding-left: 3rem;
-  color: #1F313D;
+  color: #1f313d;
   width: 35%;
 }
 
@@ -134,7 +133,7 @@ header ul li a:hover {
 
 /*Tipografia de los titulos de la leyenda*/
 .leyenda .titulo h2 {
-  font-family: 'Griffy', cursive;
+  font-family: "Griffy", cursive;
 }
 
 .leyenda p {
@@ -143,7 +142,7 @@ header ul li a:hover {
 
 /*Damos un tamaño generico al texto*/
 .cuerpo {
-  background-color: #FC5420;
+  background-color: #fc5420;
   font-size: 0.9rem;
   padding-bottom: 2rem;
 }
@@ -154,7 +153,7 @@ header ul li a:hover {
 }
 
 /*Centramos los textos descriptivos del establecimiento y les damos un margen*/
-.descripcionEst{
+.descripcionEst {
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
@@ -163,7 +162,7 @@ header ul li a:hover {
 }
 
 /*Distancia entre el parrafo y el titulo*/
-.descripcionEst h2{
+.descripcionEst h2 {
   padding-bottom: 1rem;
 }
 
@@ -171,16 +170,16 @@ header ul li a:hover {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-left: 5%;
   padding-right: 5%;
-} 
+}
 
 /*borde de la carta, tamaño y repartimos sus elementos en columnas para que ocupen de manera proporcionada todo el espacio*/
 .card {
   border-width: 0.1rem;
   border-style: solid;
-  border-color: #A55183;
+  border-color: #a55183;
   width: 30%;
   min-width: 20rem;
   height: 23rem;
@@ -192,14 +191,14 @@ header ul li a:hover {
 }
 
 /*Que la imagen ocupe todo el ancho de la carta y buena parte del ancho*/
-.card img{
+.card img {
   width: 100%;
   height: 50%;
 }
 
 /*estilo para los titulos de las tarjetas de establecimientos*/
 .card h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 1.4rem;
   padding-left: 0.5rem;
@@ -209,11 +208,10 @@ header ul li a:hover {
 .card p {
   padding-left: 0.5rem;
   padding-right: 10%;
-
 }
 
 /*Posicionamos el elemento abajo a la derecha y centramos sus elementos*/
-.puntuacion{
+.puntuacion {
   padding-bottom: 0.2rem;
   padding-right: 0.5rem;
   display: flex;
@@ -222,21 +220,20 @@ header ul li a:hover {
 }
 
 /*Tamaño del icono de puntuacion*/
-.puntuacion img{
+.puntuacion img {
   width: 1.7rem;
   height: 1.7rem;
 }
 
 /*Estilo texto puntuación*/
-.puntuacion p{
+.puntuacion p {
   font-size: 0.75rem;
   padding-right: 0.5rem;
   color: #000000;
-
 }
 
 footer {
-  background-color: #A55183;
+  background-color: #a55183;
   display: flex;
   flex-direction: column;
 }
@@ -244,7 +241,7 @@ footer {
 /*Estilo general del footer, centramos los elementos y establecemos el flex */
 /*Los hijos se repartiran el tamaño en columnas*/
 .info {
-  color: #FFFFFF  ;
+  color: #ffffff;
   font-size: 0.9rem;
   padding-top: 2rem;
   padding-bottom: 5rem;
@@ -277,7 +274,7 @@ footer {
 
 /*Estilo titulos footer*/
 .info h3 {
-  font-family: 'Griffy', cursive;
+  font-family: "Griffy", cursive;
   font-size: 1.5rem;
   padding-bottom: 1rem;
 }
@@ -291,27 +288,26 @@ footer {
 /*Movemos los iconos de las redes sociales al final de la pantalla y los colocamos en fila*/
 .social {
   align-self: flex-end;
-  display: flex;
-  align-items: stretch;
   flex-wrap: wrap;
+  margin-bottom: 0.4rem;
 }
 
 /*Cambiamos el color de los iconos de redes sociales a blanco*/
-.social img{
+.social img {
   filter: brightness(0) invert(1);
   width: 2rem;
   height: 2rem;
   padding: 1rem;
-  padding-right: 4rem;
+  padding-right: 3rem;
 }
 
-.social img:hover{
-  filter: invert(53%) sepia(83%) saturate(4923%) hue-rotate(349deg) brightness(101%) contrast(98%);
+.social img:hover {
+  filter: invert(53%) sepia(83%) saturate(4923%) hue-rotate(349deg)
+    brightness(101%) contrast(98%);
 }
-
 
 /*Estilo general para los titulos*/
 h2 {
-  font-family: 'Creepster', cursive;
+  font-family: "Creepster", cursive;
   font-size: 2rem;
 }
