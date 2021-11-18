@@ -13,7 +13,7 @@ header {
 /*damos un margen y un tamaño al logo*/
 .logo img {
   margin-left: 2rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0 0.5rem 0.5rem;
   width: 20rem;
   height: 3rem;
 }
@@ -97,7 +97,7 @@ header ul li a:hover {
 
 /*Establecemos el tamaño que tendra el mapa en la web*/
 .resumen > img {
-  flex: 1 1 25rem;
+  flex: 1 1 10rem;
   min-width: 20rem;
   padding: 1rem;
 }
@@ -174,8 +174,7 @@ header ul li a:hover {
   border-color: #a55183;
   width: 30%;
   min-width: 20rem;
-  height: 23rem;
-
+  height: 20rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -244,19 +243,19 @@ footer {
   padding: 0.5rem;
   padding-right: 2rem;
   height: 3rem;
-  flex: 1 0 15%;
+  flex: 1 0 10%;
 }
 
 .contacto {
-  flex: 1 0 20%;
+  flex: 1 0 10%;
 }
 
 .colaboradores {
-  flex: 1 0 20%;
+  flex: 1 0 10%;
 }
 
 .licencia {
-  flex: 1 0 20%;
+  flex: 1 0 0%;
 }
 
 /*Estilo titulos footer*/
@@ -272,6 +271,11 @@ footer {
   list-style-position: inside;
 }
 
+/*Separacion entre lineas*/
+.info ul li {
+  margin-bottom: 0.5rem;
+}
+
 /*Movemos los iconos de las redes sociales al final de la pantalla y los colocamos en fila*/
 .social {
   align-self: flex-end;
@@ -282,8 +286,8 @@ footer {
 /*Cambiamos el color de los iconos de redes sociales a blanco*/
 .social img {
   filter: brightness(0) invert(1);
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   padding: 1rem;
   padding-right: 3rem;
 }
